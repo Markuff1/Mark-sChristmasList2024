@@ -1,0 +1,77 @@
+table{
+    height: 70vw;
+    width: 95%;
+    padding-top: 0.8vw;
+    padding-bottom: 2vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+td{
+    height: 2.5vw;
+    border-bottom: 1px solid #000000;
+    text-align: center;
+    font-family: 'Agency FB';
+    font-size: 1.2vw;
+    font-weight: bold;
+}
+
+th{
+    height: 1.4vw;
+    border-bottom: 1px solid #000000; 
+    font-size: 1.3vw;
+    text-decoration: underline;
+    font-family: 'Agency FB';
+    letter-spacing: 0.2vw;
+}
+
+.hover3 {
+    color: var(--color-Items);
+}
+.hover3:hover {
+    background-color: var(--color-primary);
+    --color-Items: var(--color-white);
+    color: var(--color-Items);
+    cursor: pointer;
+
+    a{
+        color: var(--color-Items);
+
+    }
+}
+
+a{
+    background-color: transparent;
+    text-decoration: none;
+    color: var(--color-black);
+}
+
+.hover3NEW{
+    color: var(--color-NEWItems);
+
+    a{
+        color: var(--color-NEWItems);
+    }
+}
+
+.hover3NEW .Item::before {
+    content: "NEW! ";
+    font-family: 'Agency FB';
+    font-weight: 1000;
+    color: var(--color-NEWItemText);
+}
+
+.hover3NEW .Item:hover::before {
+    --color-NEWItemText: var(--color-white);
+    color: var(--color-NEWItemText);
+}
+
+.hover3NEW:hover {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    cursor: pointer;
+
+    a{
+        color: var(--color-white);
+    }
+}

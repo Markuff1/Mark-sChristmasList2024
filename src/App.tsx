@@ -1,5 +1,5 @@
 import "./christmaslist.css";
-import { ChristmasList } from "./ChristmasList";
+import {ListOfItems} from "./ListOfItems";
 import ChristmasCountdown from './ChristmasCountdown';
 
 
@@ -13,7 +13,7 @@ function App() {
         Mark's Christmas List
       </div>
       <ChristmasCountdown/>
-      <ChristmasList/>
+      <ListOfItems/>
     </div>
   );
 }
